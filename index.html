@@ -85,6 +85,8 @@
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
@@ -112,8 +114,6 @@
             <img src="img/Portugol.png" alt="Livro sobre portugol" />
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -122,6 +122,15 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
+
+      <div class="]card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+          </div>
+        </div>
+      </div>
+    
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -130,6 +139,10 @@
       const swiper = new Swiper(".swiper", {
         spaceBetween: 10,
         slidesPerView: 3,
+        pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
       });
     </script>
   </body>
