@@ -24,4 +24,6 @@
 
 .card__descricao {
     display: flex;
+    justify-content: space-between;
+    
 }
